@@ -2,27 +2,11 @@
 <HTML>
     <HEAD>
         <TITLE>Management</TITLE>
-        <LINK rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <LINK rel="stylesheet" type="text/css" href="css/style.css">
     </HEAD>
 
     <BODY>
         <DIV class="container">
-            {% with messages = get_flashed_messages() %}
-                {% if messages %}
-                    {% for message in messages %}
-                        <SVG xmlns="http://www.w3.org/2000/svg" style="display: none;">
-                            <SYMBOL id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
-                                <PATH d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-                            </SYMBOL>
-                        </SVG>
-                        <DIV class="alert alert-success" role="alert">
-                            <SVG class="sign" role="img" aria-label="Success:"><USE xlink:href="#check-circle-fill"/></SVG>
-                            <STRONG>Succesfully: </STRONG> {{ message }}
-                        </DIV>
-                    {% endfor %}
-                {% endif %}
-            {% endwith %}
-
             <H1>CODETTE.COM</H1><BR>
 
             <SECTION id="create">
@@ -62,26 +46,24 @@
                     <BUTTON type="submit" name="list">LIST</BUTTON>
                 </FORM>
 
-                <TABLE>
+                <!-- <TABLE>
                     <THEAD>
                         <TR>
                             <TD>ID</TD>
                             <TD>USERNAME</TD>
                         </TR>
                     </THEAD>
-                    {% for user in users %}
-                        <TBODY>
-                            <TR>
-                                <TD>{{ user.0 }}</TD>
-                                <TD>{{ user.1 }}</TD>
-                            </TR>
-                        </TBODY>
-                    {% endfor %}
-                </TABLE>
+                    <TBODY>
+                        <TR>
+                            <TD>{{ user.0 }}</TD>
+                            <TD>{{ user.1 }}</TD>
+                        </TR>
+                    </TBODY>
+                </TABLE> -->
             </SECTION>
 
             <DIV id="img">
-                <IMG width="300" alt="LION" src="{{ url_for('static', filename='lion.jpeg') }}"/>
+                <IMG width="300" alt="LION" src="img/lion.jpeg"/>
             </DIV>
         </DIV>
     </BODY>

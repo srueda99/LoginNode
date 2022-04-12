@@ -3,11 +3,12 @@ const express = require('express');
 const session = require('express-session');
 const mysql = require('mysql');
 const path = require('path');
-const getenv = require('getenv');
+const dotenv = require('dotenv');
+dotenv.config();
 
-// Start the server, running on port 2020
+// Start the server running with port as env variable
 const app = express();
-const port = process.env.PORT || 2020;
+const port = process.env.PORT || 4040;
 app.listen(port, () => {
     console.log(`Server running on port: ${port}`);
 });
@@ -27,9 +28,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Connection to the DB
 var cxn = mysql.createConnection({
-    host: getenv('DB_HOST'),
-    user: getenv('DB_USER'),
-    password: getenv('DB_PASSWORD')
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD
 });
 
 app.post('/login', function(req, res) {
