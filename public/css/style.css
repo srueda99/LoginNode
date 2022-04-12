@@ -1,0 +1,249 @@
+BODY {
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+H2 {
+    margin: 20px auto;
+}
+
+INPUT {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    width: 60%;
+	margin: 20px auto;
+	padding: 10px;
+    border: solid lightgray 2px;
+    background: #efefef;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.226);
+	outline: none;
+	border-radius: 5px;
+}
+
+BUTTON {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	width: 40%;
+	height: 40px;
+	margin: 10px auto;
+    padding: 10px 0px 10px 0px;
+	display: block;
+	color: #fff;
+	background: rgb(43, 41, 41);
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+    border: 2px solid rgba(218, 186, 4, 0.363);
+    box-shadow: 0 0 20px rgba(139, 115, 7, 0.411);
+	border-radius: 10px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+
+BUTTON:hover {
+	background: black;
+    border: 2px solid rgba(47, 218, 4, 0.363);
+    box-shadow: 0 0 20px rgba(7, 139, 29, 0.411);
+}
+
+TABLE {
+    margin-top: 15px;
+    border: solid rgba(6, 30, 241, 0.979);
+}
+THEAD {
+    background-color: rgb(3, 7, 243);
+}
+
+TD {
+    border: solid 1px;
+    padding: 7px;
+}
+
+TR:hover {
+    background-color: rgba(5, 120, 252, 0.555);
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sign {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 20%;
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+
+
+#login {
+    height: 230px;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.151);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(218, 186, 4, 0.363);
+    box-shadow: 0 0 40px rgba(139, 115, 7, 0.623);
+    padding: 50px 35px;
+    margin-top: 30px;
+}
+
+#create {
+    height: 300px;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.151);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    display: flex;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(24, 243, 5, 0.445);
+    box-shadow: 0 0 40px rgba(11, 187, 5, 0.623);
+    padding: 50px 35px;
+    vertical-align: middle;
+}
+#create H2 {
+    color: rgba(33, 238, 14, 0.808);
+}
+#create BUTTON {
+    border: 2px solid rgba(24, 243, 5, 0.445);
+    box-shadow: 0 0 40px rgba(11, 187, 5, 0.623);
+}
+#create BUTTON:hoover {
+    border: 2px solid rgba(24, 243, 5, 0.445);
+    box-shadow: 0 0 40px rgba(11, 187, 5, 0.623);
+}
+
+#reset {
+    height: 300px;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.151);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    display: flex;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(218, 186, 4, 0.363);
+    box-shadow: 0 0 40px rgba(139, 115, 7, 0.623);
+    padding: 50px 35px;
+    vertical-align: middle;
+}
+#reset H2 {
+    color: rgba(238, 204, 14, 0.808);
+}
+#reset BUTTON {
+    border: 2px solid rgba(218, 186, 4, 0.363);
+    box-shadow: 0 0 40px rgba(139, 115, 7, 0.623);
+}
+#reset BUTTON:hoover {
+    border: 2px solid rgba(218, 186, 4, 0.363);
+    box-shadow: 0 0 40px rgba(139, 115, 7, 0.623);
+}
+
+#delete {
+    height: 230px;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.151);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    display: flex;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(243, 5, 5, 0.445);
+    box-shadow: 0 0 40px rgba(233, 10, 10, 0.623);
+    padding: 50px 35px;
+    vertical-align: middle;
+}
+#delete H2 {
+    color: rgba(238, 29, 14, 0.808);
+}
+#delete BUTTON {
+    border: 2px solid rgba(243, 5, 5, 0.445);
+    box-shadow: 0 0 40px rgba(233, 10, 10, 0.623);
+}
+#delete BUTTON:hoover {
+    border: 2px solid rgba(243, 5, 5, 0.445);
+    box-shadow: 0 0 40px rgba(233, 10, 10, 0.623);
+}
+
+#list {
+    height: auto;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.151);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    display: flex;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(5, 29, 243, 0.445);
+    box-shadow: 0 0 40px rgba(4, 39, 240, 0.623);
+    padding: 50px 35px;
+    vertical-align: middle;
+}
+#list H2 {
+    color: rgba(14, 141, 245, 0.808);
+}
+#list BUTTON {
+    border: 2px solid rgba(5, 29, 243, 0.445);
+    box-shadow: 0 0 40px rgba(4, 39, 240, 0.623);
+}
+#list BUTTON:hoover {
+    border: 2px solid rgba(5, 188, 243, 0.445);
+    box-shadow: 0 0 40px rgba(24, 183, 247, 0.623);
+}
+
+#welcome {
+    font-size: small;
+    position: relative;
+    bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
