@@ -6,5 +6,5 @@ This app is a login website built o NodeJS as a Backend, HTML and CSS as a Front
 - **DB_HOST**
 - **DB_USER**
 - **DB_PASSWORD**
-- **DB_SCHEMA**
+- **DB_SCHEMA**\
 As the environment variables names.
